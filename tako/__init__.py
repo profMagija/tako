@@ -78,7 +78,7 @@ def create_new_subproject(proj, name=None):
 
 @ui.ask_param('name', 'Project name')
 def create_new_project(name=None):
-    projs.append(schedule.ScheduleProject(name, (255, 0, 0), (255, 255, 255)))
+    _PROJS.append(schedule.ScheduleProject(name, (255, 0, 0), (255, 255, 255)))
     save_changes()
     update_project_list()
 
